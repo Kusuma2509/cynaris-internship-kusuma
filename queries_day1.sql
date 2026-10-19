@@ -1,0 +1,10 @@
+SELECT * FROM sales;
+SELECT * FROM sales WHERE city = 'Bengaluru';
+Select * FROM sales where price=1000;
+Select product_name from sales where city='bengaluru' and city ='Mysore';
+select product_name from sales where city='benagluru' or city='Mysore';
+select * from sales where not city='Chennai';
+select * from sales where product_name like 'lap%';
+select * from sales where city in ('Chennai','Andra');
+select * from sales where price BETWEEN 500 and 1000;
+select * from sales where sale_id is NULL;
