@@ -1,0 +1,66 @@
+dataContractSpecification: 0.9.3
+
+id: employee-data-v1
+
+info:
+  title: Employee Data Contract
+  owner: Data Engineering Team
+  producer: Data Analyst
+  consumer: BI Dashboard
+  description: Employee dataset quality and schema requirements
+
+  sla:
+    freshness: "Within 24 hours"
+
+models:
+  employees:
+    fields:
+
+      Employee_ID:
+        type: integer
+        required: true
+        unique: true
+        classification: confidential
+
+      Name:
+        type: string
+        required: true
+        pii: true
+        classification: confidential
+
+      Department:
+        type: string
+        required: true
+        allowed_values:
+          - IT
+          - Hr
+          - Sales
+
+      Age:
+        type: integer
+        required: true
+        minimum: 18
+        maximum: 100
+
+      Salary:
+        type: number
+        required: true
+        minimum: 0
+        classification: confidential
+
+      Experience:
+        type: number
+        required: true
+        minimum: 0
+        maximum: 50
+
+quality_rules:
+  - No missing employee IDs
+  - No duplicate employee IDs
+  - Age must be between 18 and 100
+  - Salary must be non-negative
+  - Department must contain approved values
+
+consumer:
+  name: BI Dashboard
+  access: Read Only
