@@ -1,0 +1,7 @@
+Product,Category,Region,Sales,Quantity
+Laptop,Electronics,South,30200.0,2
+Phone,Electronics,North,20000.0,3
+Laptop,Electronics,South,55000.0,2
+Headphones,Accessories,West,3000.0,5
+Phone,Electronics,North,25000.0,4
+Laptop,Electronics,East,48000.0,1
