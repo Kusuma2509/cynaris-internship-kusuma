@@ -1,0 +1,11 @@
+Employee_ID,Name,Department,Age,Salary,Experience
+101,Asha,It,25.0,50000.0,2.0
+102,Rahul,Hr,30.0,45000.0,5.0
+103,Priya,Sales,38.5,60000.0,3.0
+104,Kiran,It,28.0,50000.0,4.0
+105,Sneha,Sales,38.5,55000.0,6.0
+106,Arjun,Hr,32.0,48000.0,6.0
+107,Meena,It,27.0,52000.0,2.0
+108,Ravi,Sales,29.0,51000.0,3.0
+109,Anita,Hr,26.0,47000.0,4.0
+110,John,It,31.0,50000.0,5.0
